@@ -32,3 +32,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 2. Click WEB button
 3. Install react-router-dom<br/>
    `$ npm install react-router-dom`
+
+# Install React Tinder Card
+
+1. Open [https://www.npmjs.com/package/react-tinder-card](https://www.npmjs.com/package/react-tinder-card)
+2. See in Install Column
+3. Install react-router-dom<br/>
+   `$ npm i react-tinder-card`
