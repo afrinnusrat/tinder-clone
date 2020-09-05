@@ -6,13 +6,13 @@ import ForumIcon from "@material-ui/icons/Forum";
 function Header() {
   return (
     <div className="header">
-      <PersonIcon />
+      <PersonIcon className="header_icon" fontSize="large" />
       <img
         className="header__logo"
         src="https://1000logos.net/wp-content/uploads/2018/07/tinder-logo.png"
         alt="tinder logo"
       />
-      <ForumIcon />
+      <ForumIcon className="header_icon" fontSize="large" />
     </div>
   );
 }
