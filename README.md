@@ -14,3 +14,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 3. Create website name for the project
 4. Install firebase-tools `$ npm install -g firebase-tools`
 5. Login to firebase `$ firebase login`
+
+# Install Material UI
+
+1. Open https://material-ui.com/getting-started/installation/
+2. Install material-ui `$ npm install @material-ui/core`
+3. Instal material-ui icons `$ npm install @material-ui/icons`
+4. Contoh penggunaan, Import PersonIcon
+
+- Click `search the full list of these icons.` will open new tab
+- Fill `person` in searchBox and click the person icon
+- Copy `import PersonIcon from '@material-ui/icons/Person';` and paste to Header.js file
