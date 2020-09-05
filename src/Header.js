@@ -7,7 +7,11 @@ function Header() {
   return (
     <div className="header">
       <PersonIcon />
-      <h1>Header</h1>
+      <img
+        className="header__logo"
+        src="https://1000logos.net/wp-content/uploads/2018/07/tinder-logo.png"
+        alt="tinder logo"
+      />
       <ForumIcon />
     </div>
   );
