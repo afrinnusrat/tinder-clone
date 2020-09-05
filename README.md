@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 # Install Material UI
 
-1. Open https://material-ui.com/getting-started/installation/
+1. Open [https://material-ui.com/getting-started/installation/](https://material-ui.com/getting-started/installation/)
 2. Install material-ui `$ npm install @material-ui/core`
 3. Instal material-ui icons `$ npm install @material-ui/icons`
 4. Contoh penggunaan, Import PersonIcon
@@ -25,3 +25,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - Click `search the full list of these icons.` will open new tab
 - Fill `person` in searchBox and click the person icon
 - Copy `import PersonIcon from '@material-ui/icons/Person';` and paste to Header.js file
+
+# Install React Router
+
+1. Open [https://reactrouter.com/](https://reactrouter.com/)
+2. Click WEB button
+3. Install react-router-dom<br/>
+   `$ npm install react-router-dom`
