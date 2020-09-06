@@ -49,3 +49,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 5. Go down look at Firebase SDK snippet
 6. Click `Config` radion button
 7. Copy `const firebaseConfig` and paste to firebase.js and edit
+
+# Setup Database Cloud Firestore
+
+1. Click `Cloud Firestore`
+2. Click `Create Database`
+3. Click `Start in test mode` and Next
+4. Click Done
