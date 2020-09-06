@@ -39,3 +39,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 2. See in Install Column
 3. Install react-router-dom<br/>
    `$ npm i react-tinder-card`
+
+# Setup Firebase Config File
+
+1. Install `$ npm i firebase`
+2. Create `firebase.js` file in src folder
+3. Goto console firebase and choose the project
+4. Click `Setting Project`
+5. Go down look at Firebase SDK snippet
+6. Click `Config` radion button
+7. Copy `const firebaseConfig` and paste to firebase.js and edit
