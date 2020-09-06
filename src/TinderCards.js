@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TinderCard from "react-tinder-card";
+import database from "./firebase";
 import "./TinderCards.css";
 
 function TinderCards() {
-  const [people, setPeople] = useState([
-    {
-      name: "The Professor",
-      url:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Premios_Goya_2020_-_%C3%81lvaro_Morte_%28Cropped%29.jpg/1200px-Premios_Goya_2020_-_%C3%81lvaro_Morte_%28Cropped%29.jpg",
-    },
-    {
-      name: "Denver",
-      url:
-        "https://pley.today/__export/1585133520847/sites/mui/img/2020/03/25/jaime-lorente-la-casa-de-papel-kzxc--1248x698xabc.jpg_1276763261.jpg",
-    },
-  ]);
+  const [people, setPeople] = useState([]);
+
+  // Piece of code which runs based on a condition
+  useEffect(() => {
+    database
+      .collection("people")
+      .onSnapshot((snapshot) =>
+        setPeople(snapshot.docs.map((doc) => doc.data()))
+      );
+  }, []);
 
   // setPeople([...people, "wilden", "ali"]); // ini contoh cara pake useState
 
