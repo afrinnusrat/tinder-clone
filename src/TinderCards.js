@@ -8,11 +8,16 @@ function TinderCards() {
 
   // Piece of code which runs based on a condition
   useEffect(() => {
-    database
+    const unsubscribe = database
       .collection("people")
       .onSnapshot((snapshot) =>
         setPeople(snapshot.docs.map((doc) => doc.data()))
       );
+
+    return () => {
+      // this is the cleanup
+      unsubscribe();
+    };
   }, []);
 
   // setPeople([...people, "wilden", "ali"]); // ini contoh cara pake useState
