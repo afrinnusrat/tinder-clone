@@ -56,3 +56,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 2. Click `Create Database`
 3. Click `Start in test mode` and Next
 4. Click Done
+
+## Membuat Database di Cloud Firestore
+
+1. Click `Start collection`
+2. Fill Collection ID with `people` and then Next
+3. Click `Auto-ID` in Document ID column
+4. Fill `name` in Field, `String` in Type, and `Denver` in Value
+5. Click Add field
+6. Fill `url` in Field, `String` in Type, and `https://pley.today/__export/1585133520847/sites/mui/img/2020/03/25/jaime-lorente-la-casa-de-papel-kzxc--1248x698xabc.jpg_1276763261.jpg` (example) in Value
+7. Click Save
