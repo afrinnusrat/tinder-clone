@@ -1,9 +1,15 @@
 import React from "react";
+import { Avatar } from "@material-ui/core";
 
-function Chat() {
+function Chat({ name, message, profilePic, timestamp }) {
   return (
-    <div>
-      <h1>Ini chat satuan</h1>
+    <div className="chat">
+      <Avatar className="chat__image" alt={name} src={profilePic} />
+      <div>
+        <h2>{name}</h2>
+        <p>{message}</p>
+      </div>
+      <p>{timestamp}</p>
     </div>
   );
 }
