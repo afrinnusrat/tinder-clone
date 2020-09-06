@@ -31,7 +31,7 @@ function ChatScreen() {
             alt={message.name}
             src={message.image}
           />
-          <p>{message.message}</p>
+          <p className="chatScreen__text">{message.message}</p>
         </div>
       ))}
     </div>
