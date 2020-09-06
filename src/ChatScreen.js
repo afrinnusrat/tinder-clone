@@ -42,6 +42,14 @@ function ChatScreen() {
           </div>
         )
       )}
+      <form className="chatScreen__input">
+        <input
+          className="chatScreen__inputField"
+          placeholder="Type a message"
+          type="text"
+        />
+        <button className="chatScreen__inputButton">SEND</button>
+      </form>
     </div>
   );
 }
