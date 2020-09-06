@@ -1,3 +1,5 @@
+import firebase from "firebase";
+
 const firebaseConfig = {
   apiKey: "AIzaSyA0eupw7wM5-M6HP7aQIOv1w9gtWEg4oas",
   authDomain: "minder-clone.firebaseapp.com",
@@ -8,3 +10,8 @@ const firebaseConfig = {
   appId: "1:822369434867:web:743cdcb6a630df7440cb86",
   measurementId: "G-1Q6FHZ6871",
 };
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const database = firebaseApp.firestore();
+
+export default database;
