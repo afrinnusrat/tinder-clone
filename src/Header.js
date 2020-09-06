@@ -11,11 +11,13 @@ function Header() {
       <IconButton>
         <PersonIcon className="header_icon" fontSize="large" />
       </IconButton>
-      <img
-        className="header__logo"
-        src="https://1000logos.net/wp-content/uploads/2018/07/tinder-logo.png"
-        alt="tinder logo"
-      />
+      <Link to="/">
+        <img
+          className="header__logo"
+          src="https://1000logos.net/wp-content/uploads/2018/07/tinder-logo.png"
+          alt="tinder logo"
+        />
+      </Link>
       <Link to="/chat">
         <IconButton>
           <ForumIcon className="header_icon" fontSize="large" />
