@@ -26,16 +26,22 @@ function ChatScreen() {
       <p className="chatScreen__timestamp">
         YOU MATCHED WITH ELLEN ON 10/08/20
       </p>
-      {messages.map((message) => (
-        <div className="chatScreen__message">
-          <Avatar
-            className="chatScreet__image"
-            alt={message.name}
-            src={message.image}
-          />
-          <p className="chatScreen__text">{message.message}</p>
-        </div>
-      ))}
+      {messages.map((message) =>
+        message.name ? (
+          <div className="chatScreen__message">
+            <Avatar
+              className="chatScreet__image"
+              alt={message.name}
+              src={message.image}
+            />
+            <p className="chatScreen__text">{message.message}</p>
+          </div>
+        ) : (
+          <div className="chatScreen__message">
+            <p className="chatScreen__textUser">{message.message}</p>
+          </div>
+        )
+      )}
     </div>
   );
 }
